@@ -1,0 +1,208 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Laravel assement",
+		"_postman_id": "1904e630-59fd-ec94-d0cb-9a91d5591747",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/login",
+			"request": {
+				"url": {
+					"raw": "http://muzammal.ezwebsol.com/api/login",
+					"protocol": "http",
+					"host": [
+						"muzammal",
+						"ezwebsol",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "muzammalcs@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "api/verifyPin",
+			"request": {
+				"url": {
+					"raw": "http://muzammal.ezwebsol.com/api/verifyPin",
+					"protocol": "http",
+					"host": [
+						"muzammal",
+						"ezwebsol",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyPin"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "pin",
+							"value": "290309",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "muzammal-test2@gmail.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "api/register",
+			"request": {
+				"url": {
+					"raw": "http://muzammal.ezwebsol.com/api/register",
+					"protocol": "http",
+					"host": [
+						"muzammal",
+						"ezwebsol",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_name",
+							"value": "muzammal_test2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "muzammal-test2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "SS2345",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "SS2345",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "api/profileUpdate",
+			"request": {
+				"url": "http://muzammal.ezwebsol.com/api/user/1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYWZkNzA0MzRhNzc3YjNjMDZkZGIwZDE0ZGNmY2JlN2M3NWIxNGQ5OGE5NTZmNzdjYzM3MzZmMjBhMTY5N2RmZDNiNjJjYjY5YTBkNzY2NzciLCJpYXQiOjE2MTg0NzY0NjAsIm5iZiI6MTYxODQ3NjQ2MCwiZXhwIjoxNjUwMDEyNDYwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.WoOMGKqeuWERB9TsG8Hl7XtjgwcAv5IuV7qpkcIdSF84BZwlumuDVB-ibJynILQud-Oz44rlM9luigTC4-SSaMy0bznYhWYHXOMn9kLV03-kiV3cKoJ7fYF03Ae1luHN6rG-xlDju-eTeBdkJIE99d0Qj8AD09lWE5ax4yRw5HZEy_08OK8vZn8Wc7u4nck0jMlJS2Y4490LYpJyrFH0y9_6SNuDMdjGClxw_yZsisUux9rOb0yktIzLDV5phtaYtHtqDN7mqOtbyUue1SptRav-b6gEYhUg-wi36EO-fjgrCYYnqXUIN9fpCTr1xDeY4GlqPorCi0fQjSKqKif5tJio2laGP7PGXwHn7vEWSAwYHnp-5_InTufEs68vNh2BgXwT0ML7fX4vAjFdy24yAWLlkgdRvJHuZ_pICA9vZP6vH6mudVgvMOtyPxgmA6EDzPFMjYVZ2GH-Jyws6ToFrpzYnvCyB4wMV02HZVDe7CVI48-fLXs_DXLVee-_q2A65mdFmE2Nt8zXPR3KSLkxIiNA9aA0BozR2W--7VxtphasndLH8x4dpOE5rdn-jKO_4kgxIlyEYBbmrgMPkRyzpQRIBoCfDVGEiaEp1rORfgjiUX_pkDWYpHIDjw2WVeuhM4AQ08TDsGMIyHrChI3mZ0asj_O-d7VCQ9Cyu0pJCS4",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_name",
+							"value": "mmm_NN",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"description": "",
+							"type": "file",
+							"src": "BingWallpaper (19).jpg"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

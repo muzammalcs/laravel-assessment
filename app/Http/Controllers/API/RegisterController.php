@@ -33,7 +33,7 @@ class RegisterController extends BaseController
         $input['pin'] = mt_rand(100000, 999999);
         $input['registered_at'] = date('Y-m-d H:i:s');
         $user = User::create($input);
-        $success['token'] =  $user->createToken('MyApp')->accessToken;
+        //$success['token'] =  $user->createToken('MyApp')->accessToken;
         $success['user_name'] =  $user->user_name;
         $success['email'] =  $user->email;
         $success['pin'] =  $user->pin;
@@ -70,7 +70,7 @@ class RegisterController extends BaseController
 
         $success['user_name'] =  $user->user_name;
         $success['email'] =  $user->email;
-        $success['pin'] =  $user->pin;
+        //$success['pin'] =  $user->pin;
    
         return $this->sendResponse($success, 'User verfied successfully!');
     }
